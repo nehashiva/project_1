@@ -1,0 +1,26 @@
+from abc import ABC, abstractmethod
+class student:
+    def __init__(self,stid,stname,stage):
+        self.student_id=stid
+        self.student_name=stname
+        self.student_age=stage
+
+    def __str__(self):
+        return f"name is {self.student_name} age is {self.student_age} id is {self.student_id} "
+
+    def __repr__(self):
+        return f"{self.student_name} {self.student_id}"
+
+    @abstractmethod
+    def abstratry(self):
+        pass
+
+s1=student(10,"Shiva",25)
+s2=student(20,"Neha",26)
+list1=[s1,s2]
+print(s1.student_name)
+print(s1.student_age)
+print(s1.student_id)
+print(s1)
+print(s2)
+print(list1)
