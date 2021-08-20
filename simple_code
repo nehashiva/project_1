@@ -15,7 +15,7 @@ class student:
     def abstratry(self):
         pass
 
-s1=student(10,"Shiva",25)
+s1=student(10,"Shiva",35)
 s2=student(20,"Neha",26)
 list1=[s1,s2]
 print(s1.student_name)
